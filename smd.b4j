@@ -1,0 +1,146 @@
+﻿Version=5.51
+AppType=JavaFX
+NumberOfModules=0
+Build1=Default,smd.app
+NumberOfFiles=3
+File1=1.bjl
+File2=adb.exe
+File3=ic_android_black_48dp.png
+NumberOfLibraries=9
+Library1=jcore
+Library2=jfx
+Library3=jcontrolsfx
+Library4=jshell
+Library5=jcustomtoast
+Library6=jdiskspace
+Library7=jmsgboxes
+Library8=jrandomaccessfile
+Library9=jsql
+@EndOfDesignText@
+#Region Project Attributes 
+	#MainFormWidth: 600
+	#MainFormHeight: 600 
+#End Region
+
+Sub Process_Globals
+	Private fx As JFX
+	Private MainForm As Form
+	Private MenuBar1 As MenuBar
+	Private Button1 As Button
+	Private Label1 As Label
+	Private Label2 As Label
+	Private Label3 As Label
+	Private shell As Shell
+	Private agu,cmli As List
+	Private Label4 As Label
+	Dim dir,subdir,arg,arg1,arg2,arg3 As String 
+	Dim time As String = DateTime.GetHour(DateTime.Now) & ":" & DateTime.GetMinute(DateTime.Now) & ":" & DateTime.GetSecond(DateTime.Now)
+	Private ListView1 As ListView
+	Private ListView2 As ListView
+	Dim rmspace As jDiskSpace
+	Private Button2 As Button
+End Sub
+
+Sub AppStart (Form1 As Form, args() As String)
+	MainForm = Form1
+	MainForm.RootPane.LoadLayout("1")
+	MainForm.Resizable=False 
+	MainForm.Show
+	dir="C:/SmartDesk"
+	subdir=dir&"/shell"
+	agu.Initialize
+	cmli.Initialize
+	agu.Add("devices -l")
+	Label3.TextSize=15
+	Label3.Text="Welcome to SmartDesk Alpha V1"
+'	arg="adb "
+	'#####file init#######
+	ListView2.Items.Clear
+	If File.Exists(subdir,"adb.exe") Then 
+		Log(time&" -> file exists")
+		ListView2.Items.Add(time&": "&subdir&" ready..")
+		Else
+			File.MakeDir(dir,"shell")
+			File.Copy(File.DirAssets,"adb.exe",subdir,"adb.exe")
+			ListView2.Items.Add(time&": file copied to "&dir)
+	End If
+	'#####################
+	arg="get-serialno "
+	shell.Initialize("shell","adb",Array As String(arg))
+	shell.WorkingDirectory=subdir
+	shell.Run(-1)
+	 dev_path
+	 ListView2.ScrollTo(ListView1.SelectedIndex)
+End Sub
+
+'Return true to allow the default exceptions handler to handle the uncaught exception.
+Sub Application_Error (Error As Exception, StackTrace As String) As Boolean
+	Return True
+End Sub
+
+Sub shell_ProcessCompleted (Success As Boolean, ExitCode As Int, StdOut As String, StdErr As String)
+	If Success And ExitCode = 0 Then
+		Log("Success")
+		Log(StdOut)
+		ListView2.Items.Add(time&": "&StdOut)
+		cmli.Add(StdOut)
+		If cmli.Size=1 Then
+			ListView1.Items.Add("Connected Device: "&cmli.Get(0))
+			File.WriteString(dir,"serail.txt",cmli.Get(0))
+		Else
+			If cmli.Size=2 Then 
+				File.WriteString(dir,"device_path.txt",cmli.Get(1))
+			End If 
+		End If
+	Else
+		Log("Error: " & StdErr)
+		ListView2.Items.Add(time&": "&StdErr)
+	End If
+	If cmli.Size>3 Then 
+		cmli.Clear
+	End If
+End Sub
+
+Sub dev_path
+	arg="sync node /sdcard"
+	shell.Initialize("shell","adb",Array As String(arg))
+	shell.WorkingDirectory=subdir
+	shell.Run(-1)
+End Sub
+
+Sub MenuBar1_SelectedChange (Selected As Boolean)
+	
+End Sub
+
+Sub MenuBar1_Action
+	Dim mi As MenuItem = Sender
+	If mi.Text="_Exit" Then 
+		MainForm.Close
+		Log("close..")
+	End If
+End Sub
+
+Sub Button1_Action
+	  
+	arg=""
+	shell.Initialize("shell","adb",Array As String(arg))
+	shell.WorkingDirectory=subdir
+	shell.Run(-1)
+End Sub
+
+Sub ListView2_SelectedIndexChanged(Index As Int)
+	If Index =0 Then 
+		
+	End If
+End Sub
+
+Sub ListView1_SelectedIndexChanged(Index As Int)
+	
+End Sub
+
+Sub Button2_Action
+	arg="logcat -d"&dir
+	shell.Initialize("shell","adb",Array As String(arg))
+	shell.WorkingDirectory=subdir
+	shell.Run(-1)
+End Sub
