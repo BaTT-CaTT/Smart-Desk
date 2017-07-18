@@ -178,90 +178,90 @@ public static String  _dev_path() throws Exception{
 RDebugUtils.currentModule="main";
 if (Debug.shouldDelegate(ba, "dev_path"))
 	return (String) Debug.delegate(ba, "dev_path", null);
-RDebugUtils.currentLine=2621440;
- //BA.debugLineNum = 2621440;BA.debugLine="Sub dev_path";
-RDebugUtils.currentLine=2621441;
- //BA.debugLineNum = 2621441;BA.debugLine="arg=\"sync node /sdcard\"";
+RDebugUtils.currentLine=262144;
+ //BA.debugLineNum = 262144;BA.debugLine="Sub dev_path";
+RDebugUtils.currentLine=262145;
+ //BA.debugLineNum = 262145;BA.debugLine="arg=\"sync node /sdcard\"";
 _arg = "sync node /sdcard";
-RDebugUtils.currentLine=2621442;
- //BA.debugLineNum = 2621442;BA.debugLine="shell.Initialize(\"shell\",\"adb\",Array As String(ar";
+RDebugUtils.currentLine=262146;
+ //BA.debugLineNum = 262146;BA.debugLine="shell.Initialize(\"shell\",\"adb\",Array As String(ar";
 _shell.Initialize("shell","adb",anywheresoftware.b4a.keywords.Common.ArrayToList(new String[]{_arg}));
-RDebugUtils.currentLine=2621443;
- //BA.debugLineNum = 2621443;BA.debugLine="shell.WorkingDirectory=subdir";
+RDebugUtils.currentLine=262147;
+ //BA.debugLineNum = 262147;BA.debugLine="shell.WorkingDirectory=subdir";
 _shell.setWorkingDirectory(_subdir);
-RDebugUtils.currentLine=2621444;
- //BA.debugLineNum = 2621444;BA.debugLine="shell.Run(-1)";
+RDebugUtils.currentLine=262148;
+ //BA.debugLineNum = 262148;BA.debugLine="shell.Run(-1)";
 _shell.Run(ba,(long) (-1));
-RDebugUtils.currentLine=2621445;
- //BA.debugLineNum = 2621445;BA.debugLine="End Sub";
+RDebugUtils.currentLine=262149;
+ //BA.debugLineNum = 262149;BA.debugLine="End Sub";
 return "";
 }
 public static String  _button1_action() throws Exception{
 RDebugUtils.currentModule="main";
 if (Debug.shouldDelegate(ba, "button1_action"))
 	return (String) Debug.delegate(ba, "button1_action", null);
-RDebugUtils.currentLine=327680;
- //BA.debugLineNum = 327680;BA.debugLine="Sub Button1_Action";
-RDebugUtils.currentLine=327682;
- //BA.debugLineNum = 327682;BA.debugLine="arg=\"\"";
+RDebugUtils.currentLine=458752;
+ //BA.debugLineNum = 458752;BA.debugLine="Sub Button1_Action";
+RDebugUtils.currentLine=458754;
+ //BA.debugLineNum = 458754;BA.debugLine="arg=\"\"";
 _arg = "";
-RDebugUtils.currentLine=327683;
- //BA.debugLineNum = 327683;BA.debugLine="shell.Initialize(\"shell\",\"adb\",Array As String(ar";
+RDebugUtils.currentLine=458755;
+ //BA.debugLineNum = 458755;BA.debugLine="shell.Initialize(\"shell\",\"adb\",Array As String(ar";
 _shell.Initialize("shell","adb",anywheresoftware.b4a.keywords.Common.ArrayToList(new String[]{_arg}));
-RDebugUtils.currentLine=327684;
- //BA.debugLineNum = 327684;BA.debugLine="shell.WorkingDirectory=subdir";
+RDebugUtils.currentLine=458756;
+ //BA.debugLineNum = 458756;BA.debugLine="shell.WorkingDirectory=subdir";
 _shell.setWorkingDirectory(_subdir);
-RDebugUtils.currentLine=327685;
- //BA.debugLineNum = 327685;BA.debugLine="shell.Run(-1)";
+RDebugUtils.currentLine=458757;
+ //BA.debugLineNum = 458757;BA.debugLine="shell.Run(-1)";
 _shell.Run(ba,(long) (-1));
-RDebugUtils.currentLine=327686;
- //BA.debugLineNum = 327686;BA.debugLine="End Sub";
+RDebugUtils.currentLine=458758;
+ //BA.debugLineNum = 458758;BA.debugLine="End Sub";
 return "";
 }
 public static String  _button2_action() throws Exception{
 RDebugUtils.currentModule="main";
 if (Debug.shouldDelegate(ba, "button2_action"))
 	return (String) Debug.delegate(ba, "button2_action", null);
-RDebugUtils.currentLine=2686976;
- //BA.debugLineNum = 2686976;BA.debugLine="Sub Button2_Action";
-RDebugUtils.currentLine=2686977;
- //BA.debugLineNum = 2686977;BA.debugLine="arg=\"logcat -d\"&dir";
+RDebugUtils.currentLine=655360;
+ //BA.debugLineNum = 655360;BA.debugLine="Sub Button2_Action";
+RDebugUtils.currentLine=655361;
+ //BA.debugLineNum = 655361;BA.debugLine="arg=\"logcat -d\"&dir";
 _arg = "logcat -d"+_dir;
-RDebugUtils.currentLine=2686978;
- //BA.debugLineNum = 2686978;BA.debugLine="shell.Initialize(\"shell\",\"adb\",Array As String(ar";
+RDebugUtils.currentLine=655362;
+ //BA.debugLineNum = 655362;BA.debugLine="shell.Initialize(\"shell\",\"adb\",Array As String(ar";
 _shell.Initialize("shell","adb",anywheresoftware.b4a.keywords.Common.ArrayToList(new String[]{_arg}));
-RDebugUtils.currentLine=2686979;
- //BA.debugLineNum = 2686979;BA.debugLine="shell.WorkingDirectory=subdir";
+RDebugUtils.currentLine=655363;
+ //BA.debugLineNum = 655363;BA.debugLine="shell.WorkingDirectory=subdir";
 _shell.setWorkingDirectory(_subdir);
-RDebugUtils.currentLine=2686980;
- //BA.debugLineNum = 2686980;BA.debugLine="shell.Run(-1)";
+RDebugUtils.currentLine=655364;
+ //BA.debugLineNum = 655364;BA.debugLine="shell.Run(-1)";
 _shell.Run(ba,(long) (-1));
-RDebugUtils.currentLine=2686981;
- //BA.debugLineNum = 2686981;BA.debugLine="End Sub";
+RDebugUtils.currentLine=655365;
+ //BA.debugLineNum = 655365;BA.debugLine="End Sub";
 return "";
 }
 public static String  _listview1_selectedindexchanged(int _index) throws Exception{
 RDebugUtils.currentModule="main";
 if (Debug.shouldDelegate(ba, "listview1_selectedindexchanged"))
 	return (String) Debug.delegate(ba, "listview1_selectedindexchanged", new Object[] {_index});
-RDebugUtils.currentLine=1310720;
- //BA.debugLineNum = 1310720;BA.debugLine="Sub ListView1_SelectedIndexChanged(Index As Int)";
-RDebugUtils.currentLine=1310722;
- //BA.debugLineNum = 1310722;BA.debugLine="End Sub";
+RDebugUtils.currentLine=589824;
+ //BA.debugLineNum = 589824;BA.debugLine="Sub ListView1_SelectedIndexChanged(Index As Int)";
+RDebugUtils.currentLine=589826;
+ //BA.debugLineNum = 589826;BA.debugLine="End Sub";
 return "";
 }
 public static String  _listview2_selectedindexchanged(int _index) throws Exception{
 RDebugUtils.currentModule="main";
 if (Debug.shouldDelegate(ba, "listview2_selectedindexchanged"))
 	return (String) Debug.delegate(ba, "listview2_selectedindexchanged", new Object[] {_index});
-RDebugUtils.currentLine=1245184;
- //BA.debugLineNum = 1245184;BA.debugLine="Sub ListView2_SelectedIndexChanged(Index As Int)";
-RDebugUtils.currentLine=1245185;
- //BA.debugLineNum = 1245185;BA.debugLine="If Index =0 Then";
+RDebugUtils.currentLine=524288;
+ //BA.debugLineNum = 524288;BA.debugLine="Sub ListView2_SelectedIndexChanged(Index As Int)";
+RDebugUtils.currentLine=524289;
+ //BA.debugLineNum = 524289;BA.debugLine="If Index =0 Then";
 if (_index==0) { 
  };
-RDebugUtils.currentLine=1245188;
- //BA.debugLineNum = 1245188;BA.debugLine="End Sub";
+RDebugUtils.currentLine=524292;
+ //BA.debugLineNum = 524292;BA.debugLine="End Sub";
 return "";
 }
 public static String  _menubar1_action() throws Exception{
@@ -269,92 +269,92 @@ RDebugUtils.currentModule="main";
 if (Debug.shouldDelegate(ba, "menubar1_action"))
 	return (String) Debug.delegate(ba, "menubar1_action", null);
 anywheresoftware.b4j.objects.MenuItemWrapper.ConcreteMenuItemWrapper _mi = null;
-RDebugUtils.currentLine=262144;
- //BA.debugLineNum = 262144;BA.debugLine="Sub MenuBar1_Action";
-RDebugUtils.currentLine=262145;
- //BA.debugLineNum = 262145;BA.debugLine="Dim mi As MenuItem = Sender";
+RDebugUtils.currentLine=393216;
+ //BA.debugLineNum = 393216;BA.debugLine="Sub MenuBar1_Action";
+RDebugUtils.currentLine=393217;
+ //BA.debugLineNum = 393217;BA.debugLine="Dim mi As MenuItem = Sender";
 _mi = new anywheresoftware.b4j.objects.MenuItemWrapper.ConcreteMenuItemWrapper();
 _mi.setObject((javafx.scene.control.MenuItem)(anywheresoftware.b4a.keywords.Common.Sender(ba)));
-RDebugUtils.currentLine=262146;
- //BA.debugLineNum = 262146;BA.debugLine="If mi.Text=\"_Exit\" Then";
+RDebugUtils.currentLine=393218;
+ //BA.debugLineNum = 393218;BA.debugLine="If mi.Text=\"_Exit\" Then";
 if ((_mi.getText()).equals("_Exit")) { 
-RDebugUtils.currentLine=262147;
- //BA.debugLineNum = 262147;BA.debugLine="MainForm.Close";
+RDebugUtils.currentLine=393219;
+ //BA.debugLineNum = 393219;BA.debugLine="MainForm.Close";
 _mainform.Close();
-RDebugUtils.currentLine=262148;
- //BA.debugLineNum = 262148;BA.debugLine="Log(\"close..\")";
+RDebugUtils.currentLine=393220;
+ //BA.debugLineNum = 393220;BA.debugLine="Log(\"close..\")";
 anywheresoftware.b4a.keywords.Common.Log("close..");
  };
-RDebugUtils.currentLine=262150;
- //BA.debugLineNum = 262150;BA.debugLine="End Sub";
+RDebugUtils.currentLine=393222;
+ //BA.debugLineNum = 393222;BA.debugLine="End Sub";
 return "";
 }
 public static String  _menubar1_selectedchange(boolean _selected) throws Exception{
 RDebugUtils.currentModule="main";
 if (Debug.shouldDelegate(ba, "menubar1_selectedchange"))
 	return (String) Debug.delegate(ba, "menubar1_selectedchange", new Object[] {_selected});
-RDebugUtils.currentLine=196608;
- //BA.debugLineNum = 196608;BA.debugLine="Sub MenuBar1_SelectedChange (Selected As Boolean)";
-RDebugUtils.currentLine=196610;
- //BA.debugLineNum = 196610;BA.debugLine="End Sub";
+RDebugUtils.currentLine=327680;
+ //BA.debugLineNum = 327680;BA.debugLine="Sub MenuBar1_SelectedChange (Selected As Boolean)";
+RDebugUtils.currentLine=327682;
+ //BA.debugLineNum = 327682;BA.debugLine="End Sub";
 return "";
 }
 public static String  _shell_processcompleted(boolean _success,int _exitcode,String _stdout,String _stderr) throws Exception{
 RDebugUtils.currentModule="main";
 if (Debug.shouldDelegate(ba, "shell_processcompleted"))
 	return (String) Debug.delegate(ba, "shell_processcompleted", new Object[] {_success,_exitcode,_stdout,_stderr});
-RDebugUtils.currentLine=2097152;
- //BA.debugLineNum = 2097152;BA.debugLine="Sub shell_ProcessCompleted (Success As Boolean, Ex";
-RDebugUtils.currentLine=2097153;
- //BA.debugLineNum = 2097153;BA.debugLine="If Success And ExitCode = 0 Then";
+RDebugUtils.currentLine=196608;
+ //BA.debugLineNum = 196608;BA.debugLine="Sub shell_ProcessCompleted (Success As Boolean, Ex";
+RDebugUtils.currentLine=196609;
+ //BA.debugLineNum = 196609;BA.debugLine="If Success And ExitCode = 0 Then";
 if (_success && _exitcode==0) { 
-RDebugUtils.currentLine=2097154;
- //BA.debugLineNum = 2097154;BA.debugLine="Log(\"Success\")";
+RDebugUtils.currentLine=196610;
+ //BA.debugLineNum = 196610;BA.debugLine="Log(\"Success\")";
 anywheresoftware.b4a.keywords.Common.Log("Success");
-RDebugUtils.currentLine=2097155;
- //BA.debugLineNum = 2097155;BA.debugLine="Log(StdOut)";
+RDebugUtils.currentLine=196611;
+ //BA.debugLineNum = 196611;BA.debugLine="Log(StdOut)";
 anywheresoftware.b4a.keywords.Common.Log(_stdout);
-RDebugUtils.currentLine=2097156;
- //BA.debugLineNum = 2097156;BA.debugLine="ListView2.Items.Add(time&\": \"&StdOut)";
+RDebugUtils.currentLine=196612;
+ //BA.debugLineNum = 196612;BA.debugLine="ListView2.Items.Add(time&\": \"&StdOut)";
 _listview2.getItems().Add((Object)(_time+": "+_stdout));
-RDebugUtils.currentLine=2097157;
- //BA.debugLineNum = 2097157;BA.debugLine="cmli.Add(StdOut)";
+RDebugUtils.currentLine=196613;
+ //BA.debugLineNum = 196613;BA.debugLine="cmli.Add(StdOut)";
 _cmli.Add((Object)(_stdout));
-RDebugUtils.currentLine=2097158;
- //BA.debugLineNum = 2097158;BA.debugLine="If cmli.Size=1 Then";
+RDebugUtils.currentLine=196614;
+ //BA.debugLineNum = 196614;BA.debugLine="If cmli.Size=1 Then";
 if (_cmli.getSize()==1) { 
-RDebugUtils.currentLine=2097159;
- //BA.debugLineNum = 2097159;BA.debugLine="ListView1.Items.Add(\"Connected Device: \"&cmli.G";
+RDebugUtils.currentLine=196615;
+ //BA.debugLineNum = 196615;BA.debugLine="ListView1.Items.Add(\"Connected Device: \"&cmli.G";
 _listview1.getItems().Add((Object)("Connected Device: "+BA.ObjectToString(_cmli.Get((int) (0)))));
-RDebugUtils.currentLine=2097160;
- //BA.debugLineNum = 2097160;BA.debugLine="File.WriteString(dir,\"serail.txt\",cmli.Get(0))";
+RDebugUtils.currentLine=196616;
+ //BA.debugLineNum = 196616;BA.debugLine="File.WriteString(dir,\"serail.txt\",cmli.Get(0))";
 anywheresoftware.b4a.keywords.Common.File.WriteString(_dir,"serail.txt",BA.ObjectToString(_cmli.Get((int) (0))));
  }else {
-RDebugUtils.currentLine=2097162;
- //BA.debugLineNum = 2097162;BA.debugLine="If cmli.Size=2 Then";
+RDebugUtils.currentLine=196618;
+ //BA.debugLineNum = 196618;BA.debugLine="If cmli.Size=2 Then";
 if (_cmli.getSize()==2) { 
-RDebugUtils.currentLine=2097163;
- //BA.debugLineNum = 2097163;BA.debugLine="File.WriteString(dir,\"device_path.txt\",cmli.Ge";
+RDebugUtils.currentLine=196619;
+ //BA.debugLineNum = 196619;BA.debugLine="File.WriteString(dir,\"device_path.txt\",cmli.Ge";
 anywheresoftware.b4a.keywords.Common.File.WriteString(_dir,"device_path.txt",BA.ObjectToString(_cmli.Get((int) (1))));
  };
  };
  }else {
-RDebugUtils.currentLine=2097167;
- //BA.debugLineNum = 2097167;BA.debugLine="Log(\"Error: \" & StdErr)";
+RDebugUtils.currentLine=196623;
+ //BA.debugLineNum = 196623;BA.debugLine="Log(\"Error: \" & StdErr)";
 anywheresoftware.b4a.keywords.Common.Log("Error: "+_stderr);
-RDebugUtils.currentLine=2097168;
- //BA.debugLineNum = 2097168;BA.debugLine="ListView2.Items.Add(time&\": \"&StdErr)";
+RDebugUtils.currentLine=196624;
+ //BA.debugLineNum = 196624;BA.debugLine="ListView2.Items.Add(time&\": \"&StdErr)";
 _listview2.getItems().Add((Object)(_time+": "+_stderr));
  };
-RDebugUtils.currentLine=2097170;
- //BA.debugLineNum = 2097170;BA.debugLine="If cmli.Size>3 Then";
+RDebugUtils.currentLine=196626;
+ //BA.debugLineNum = 196626;BA.debugLine="If cmli.Size>3 Then";
 if (_cmli.getSize()>3) { 
-RDebugUtils.currentLine=2097171;
- //BA.debugLineNum = 2097171;BA.debugLine="cmli.Clear";
+RDebugUtils.currentLine=196627;
+ //BA.debugLineNum = 196627;BA.debugLine="cmli.Clear";
 _cmli.Clear();
  };
-RDebugUtils.currentLine=2097173;
- //BA.debugLineNum = 2097173;BA.debugLine="End Sub";
+RDebugUtils.currentLine=196629;
+ //BA.debugLineNum = 196629;BA.debugLine="End Sub";
 return "";
 }
 }
